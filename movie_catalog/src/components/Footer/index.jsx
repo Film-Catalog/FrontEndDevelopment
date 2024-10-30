@@ -4,9 +4,8 @@ import movie from "/movie.svg"
 
 export default function Footer() {
     return(
-
         <footer class="bg-header_bg">
-        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-6xl px-2 sm:px-6 lg:px-8">
             <div class="flex flex-col items-center justify-between py-8 space-y-6 md:flex-row md:space-y-0">
             
             {/* <!-- Logo e Nome do Site --> */}
@@ -49,7 +48,7 @@ export default function Footer() {
 
                 </div>
         </div>
-            <div class="flex justify-center py-4 border-t border-gray-700 text-gray-400 text-xs">
+            <div class="flex justify-center py-2 border-t border-secondary text-textPrimary text-xs">
             <p>© 2024 Your Company. All rights reserved.</p>
             </div>
         </div>
