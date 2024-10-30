@@ -1,26 +1,13 @@
-import { Link, Outlet } from "react-router-dom";
-import SignInButton from '../components/SignInButton'
-import CreateAccountButton from '../components/CreateAccountButton'
-
+import { Outlet } from "react-router-dom";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function RootLayout() {
     return(
         <>
-            <header>
-                <Link to="/home">Home</Link>
-                <nav>
-                    <SignInButton/>
-                    <CreateAccountButton/>
-                    <Link to="/movies">Movies</Link>
-                </nav>
-            </header> 
-
+            <Header/>
             <Outlet/>
-
-            <footer>
-                Este é o Footer    
-            </footer> 
-
+            <Footer/>
         </>
     )
 }
