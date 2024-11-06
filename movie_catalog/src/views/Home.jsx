@@ -15,7 +15,7 @@ export default function Home() {
                         <p className="text-textSecondary pt-4">A melhor rede social de busca de filmes só ficou melhor.</p>
                     </div>
 
-                <div className="flex justify-around">
+                    <div className="flex justify-around">
                         <div>
                             <img className="rounded-3xl h-96 w-80 object-cover" src={device2} alt="" />
                             <p className="text-textPrimary font-bold text-center text-2xl pt-4">Iphone + Ipad</p>
@@ -33,8 +33,8 @@ export default function Home() {
                             <p className="text-textPrimary font-bold text-center text-2xl pt-4">Apple Tv</p>
                             <ButtonStore store="In the App Store"/> 
                         </div>
+                    </div>
                 </div>
-            </div>
             </BackgroundPage>
         </>
     )

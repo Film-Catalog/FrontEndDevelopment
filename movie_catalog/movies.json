@@ -1,0 +1,47 @@
+[
+    {
+        "movieTitle": "Inception",
+        "rating": 8.8,
+        "titleDescription": "Thriller psicológico sobre sonhos e realidades.",
+        "description": "Um ladrão especializado em extrair segredos do subconsciente é oferecido a chance de apagar seu passado criminoso em troca de implantar uma ideia na mente de um alvo.",
+        "releasingYear": 2010,
+        "views": 1500,
+        "likes": 1250
+    },
+    {
+        "movieTitle": "The Matrix",
+        "rating": 8.7,
+        "titleDescription": "Sci-fi sobre realidades paralelas e liberdade.",
+        "description": "Um hacker descobre a verdade sobre sua realidade e se junta a uma rebelião contra as máquinas que controlam o mundo.",
+        "releasingYear": 1999,
+        "views": 2000,
+        "likes": 1800
+    },
+    {
+        "movieTitle": "Parasite",
+        "rating": 8.6,
+        "titleDescription": "Drama social vencedor do Oscar.",
+        "description": "Uma família pobre se infiltra na vida de uma família rica, desencadeando uma série de eventos trágicos e inesperados.",
+        "releasingYear": 2019,
+        "views": 1600,
+        "likes": 1400
+    },
+    {
+        "movieTitle": "Interstellar",
+        "rating": 8.6,
+        "titleDescription": "Viagem espacial em busca da sobrevivência da humanidade.",
+        "description": "Em uma Terra moribunda, um grupo de astronautas embarca em uma viagem interestelar para encontrar um novo lar para a humanidade.",
+        "releasingYear": 2014,
+        "views": 1700,
+        "likes": 1550
+    },
+    {
+        "movieTitle": "Fight Club",
+        "rating": 8.8,
+        "titleDescription": "Drama psicológico sobre identidade e consumismo.",
+        "description": "Um homem insatisfeito com sua vida conhece um carismático vendedor de sabão e juntos eles fundam um clube secreto de luta.",
+        "releasingYear": 1999,
+        "views": 1300,
+        "likes": 1100
+    }
+]
