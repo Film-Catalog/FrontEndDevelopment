@@ -10,12 +10,13 @@ export default function MovieDescription() {
             try {
                 const response = await fetch(`http://localhost:3000/movies/${movieId}`); // URL da API para filme específico
                 const data = await response.json();
+                console.log(data)
                 setMovie(data); // Armazena o filme no estado
             } catch (error) {
                 console.error("Erro ao buscar filme:", error);
             }
         };
-
+        
         fetchMovie();
     }, [movieId]);
 
@@ -32,5 +33,6 @@ export default function MovieDescription() {
             <p><strong>Visualizações:</strong> {movie.views}</p>
             <p><strong>Likes:</strong> {movie.likes}</p>
         </div>
+        
     );
 }

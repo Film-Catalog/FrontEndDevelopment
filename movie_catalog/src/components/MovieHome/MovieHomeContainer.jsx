@@ -34,16 +34,16 @@ export default function MovieHomeContainer() {
     };
 
     return (
-        <div classNameName="relative flex items-center">
-            <button onClick={scrollLeft} classNameName="absolute left-0 z-10 p-1 text-white text-4xl rounded-full">
+        <div className="relative flex items-center">
+            <button onClick={scrollLeft} className="absolute left-0 z-10 p-1 text-white text-4xl rounded-full">
                 {"<"}
             </button>
 
-            <div ref={carouselRef} classNameName="flex overflow-x-scroll space-x-4 px-14 scrollbar-auto">
+            <div ref={carouselRef} className="flex overflow-x-scroll space-x-4 px-14 scrollbar-auto">
                 {movies.map((movie, index) => (
-                    <div key={index} onClick={() => handleMovieClick(movie.id)} classNameName="flex-shrink-0 cursor-pointer">
+                    <div key={index} onClick={() => handleMovieClick(movie.id)} className="flex-shrink-0 cursor-pointer">
                         <img 
-                            classNameName="w-56 h-80 object-cover rounded-md border-2 border-transparent hover:border-accent" 
+                            className="w-56 h-80 object-cover rounded-md border-2 border-transparent hover:border-accent" 
                             src={movie.img || '/bladeRunner.webp'} // Use uma imagem padrão caso `img` não esteja definido
                             // alt={movie.movieTitle} 
                         />
@@ -52,7 +52,7 @@ export default function MovieHomeContainer() {
                 ))}
             </div>
 
-            <button onClick={scrollRight} classNameName="absolute right-0 z-10 p-2 text-white text-4xl rounded-full">
+            <button onClick={scrollRight} className="absolute right-0 z-10 p-2 text-white text-4xl rounded-full">
                 {">"}
             </button>
         </div>
