@@ -1,5 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import eye from '/eye.svg'
+import heart from '/heart.svg'
+import view from '/view.svg'
 
 export default function MovieHomeContainer() {
     const carouselRef = useRef(null);
@@ -44,11 +47,24 @@ export default function MovieHomeContainer() {
                     <div key={index} onClick={() => handleMovieClick(movie.id)} className="flex-shrink-0 cursor-pointer">
                         <img 
                             className="w-56 h-80 object-cover rounded-md border-2 border-transparent hover:border-accent" 
-                            src={movie.img || '/bladeRunner.webp'} // Use uma imagem padrão caso `img` não esteja definido
-                            // alt={movie.movieTitle} 
+                            src={movie.image}
+                            alt={movie.movieTitle} 
                         />
-                        <p>{movie.movieTitle}</p>
+                    <div className='flex justify-center gap-4 pt-1'>
+                        <div className='flex gap-1'>
+                            <img src={eye} className='w-3'/> 
+                            <p className='flex items-center justify-center text-textSecondary text-center text-[0.7rem] h-full'>{movie.rating}</p>
+                        </div>
+                        <div className='flex gap-1'>
+                            <img src={view} className='w-3'/>
+                            <p className='flex items-center justify-center text-textSecondary text-center text-[0.7rem] h-full'>{movie.views}</p>
+                        </div>
+                        <div className='flex gap-1'>
+                            <img src={heart} className='w-3'/>
+                            <p className='flex items-center justify-center text-textSecondary text-center text-[0.7rem] h-full'>{movie.likes}</p>
+                        </div>
                     </div>
+                </div>
                 ))}
             </div>
 

@@ -10,6 +10,7 @@ export default {
   ],
   theme: {
     extend: {
+      
       colors: {
         primary: colors.zinc[900],       // Fundo principal escuro
         secondary: colors.gray[700],     // Para fundos de seções ou cartões
@@ -19,6 +20,10 @@ export default {
         textSecondary: colors.gray[400], // Texto secundário ou descritivo
         header_bg: colors.gray[900],     // Cor de fundo do cabeçalho
         hover: colors.cyan[800],         // Cor de hover para interações
+      },
+
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
       
       fontFamily: {
