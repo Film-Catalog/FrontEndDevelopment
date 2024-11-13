@@ -1,8 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import image from '/movies/bladeRunner.webp'
 import BackgroundPage from '../components/BackgroundPage/BackgroundPage';
-import BackgroundImg from '../components/BackgroundImg/BackgroundImg';
 import eye from '/eye.svg'
 import heart from '/heart.svg'
 import view from '/view.svg'
@@ -22,6 +20,8 @@ export default function MovieDescription() {
                 console.error("Erro ao buscar filme:", error);
             }
         };
+
+        
         
         fetchMovie();
     }, [movieId]);
@@ -29,16 +29,15 @@ export default function MovieDescription() {
     if (!movie) {
         return <p>Filme não encontrado</p>;
     }
-
+    
     return (
         <BackgroundPage>
-            {/* <BackgroundImg backgroundUrl={movie.image}> */}
             <div className='w-2/3 mx-auto flex gap-14 pt-12'>
                 <div>
                     <div className='grid gap-10'>
                             <img className="w-96 h-auto object-cover rounded-md border-2 border-transparent" src={movie.image}/>
                     </div>
-                    <div className='flex gap-6 pt-5'>
+                    <div className='flex justify-center gap-7 pt-5'>
                         <div className='flex gap-1'>
                             <img src={eye} className='w-6'/> 
                             <p className='text-textSecondary'>{movie.rating}</p>
@@ -60,16 +59,7 @@ export default function MovieDescription() {
                         <p className="text-lg text-textSecondary my-4">{movie.titleDescription}</p>
                         <p className="text-lg text-textSecondary my-4">{movie.description}</p>
                     </div>
-                {/* <div className="p-8 text-white bg-opacity-75 bg-black rounded">
-                    <h1 className="text-4xl font-bold">{movie.movieTitle}</h1>
-                    <p className="text-lg my-4">{movie.description}</p>
-                    <p><strong>Rating:</strong> {movie.rating}</p>
-                    <p><strong>Ano de Lançamento:</strong> {movie.releasingYear}</p>
-                    <p><strong>Visualizações:</strong> {movie.views}</p>
-                    <p><strong>Likes:</strong> {movie.likes}</p>
-                </div> */}
             </div>
-            {/* </BackgroundImg> */}
         </BackgroundPage>
     );
 }

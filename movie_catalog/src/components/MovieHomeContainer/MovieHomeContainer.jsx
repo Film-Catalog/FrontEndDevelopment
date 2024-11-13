@@ -20,7 +20,6 @@ export default function MovieHomeContainer() {
                 console.error("Erro ao buscar filmes:", error);
             }
         };
-        
         fetchMovies();
     }, []);
 

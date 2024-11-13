@@ -1,5 +1,5 @@
 import { useState } from "react";
-import TitleFilter from "../components/Movies/TitleFilter/TitleFilter";
+import TitleFilter from "../components/TitleFilter/TitleFilter";
 import BackgroundPage from "../components/BackgroundPage/BackgroundPage";
 import MovieHomeContainer from "../components/MovieHomeContainer/MovieHomeContainer";
 
