@@ -56,9 +56,15 @@ export default function MovieDescription() {
                         <h1 className="text-4xl text-textPrimary font-bold">{movie.movieTitle}
                             <u className='ml-5 text-2xl cursor-pointer text-textSecondary hover:text-hover '>{movie.releasingYear}</u>
                         </h1>
-                        <p className="text-lg text-textSecondary my-4">{movie.titleDescription}</p>
-                        <p className="text-lg text-textSecondary my-4">{movie.description}</p>
+                        <p className="text-sm text-textSecondary my-4">{movie.titleDescription}</p>
+                        <p className="text-2xl text-textSecondary my-4">{movie.description}</p>
+
+                        <div>
+                            <h1 className='text-3xl text-textPrimary font-bold pt-8'>Género</h1>
+                            <p className="text-2x1 text-textSecondary">{movie.genre}</p>
+                        </div>
                     </div>
+                    
             </div>
         </BackgroundPage>
     );
