@@ -29,18 +29,15 @@ export default function MovieHomeContainer({ selectedGender }) {
     useEffect(() => {
         if (selectedGender) {
             const filtered = movies.filter(movie => {
-                // Verifica se o campo 'genre' existe e é uma string válida
                 if (!movie.genre) return false;
                 
-                // Separa os gêneros da string por vírgula e ignora espaços extras
                 const genres = movie.genre.split(',').map(g => g.trim().toLowerCase());
 
-                // Verifica se algum gênero do filme corresponde ao gênero selecionado
                 return genres.some(genre => genre === selectedGender.toLowerCase());
             });
             setFilteredMovies(filtered);
         } else {
-            setFilteredMovies(movies); // Se não houver filtro, mostrar todos os filmes
+            setFilteredMovies(movies); 
         }
     }, [selectedGender, movies]);
 

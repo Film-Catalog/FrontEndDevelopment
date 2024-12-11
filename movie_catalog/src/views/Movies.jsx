@@ -1,7 +1,7 @@
 import { useState } from "react";
 import TitleFilter from "../components/TitleFilter/TitleFilter";
 import BackgroundPage from "../components/BackgroundPage/BackgroundPage";
-import MovieHomeContainer from "../components/MovieHomeContainer/MovieHomeContainer";
+import MovieHomeContainer from "../components/MovieHomeContainer";
 
 export default function Movies() {
     const [openFilter, setOpenFilter] = useState(null); // Estado para rastrear o filtro aberto
